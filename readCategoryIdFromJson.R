@@ -8,3 +8,5 @@ catdf = fromJSON(path)
 list = catdf %>% filter(bannerDedupeCategory=="Offline") %>% select("id") %>% unlist()
 
 listConcat = paste0('$',paste(list,collapse = '$,$'),'$')
+
+listConcat %>% head() # head of dataframe
