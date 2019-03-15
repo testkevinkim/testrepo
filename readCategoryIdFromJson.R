@@ -10,3 +10,5 @@ list = catdf %>% filter(bannerDedupeCategory=="Offline") %>% select("id") %>% un
 listConcat = paste0('$',paste(list,collapse = '$,$'),'$')
 
 listConcat %>% head() # head of dataframe
+
+length(listConcat) # this line for making conflict
