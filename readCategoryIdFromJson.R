@@ -11,4 +11,4 @@ listConcat = paste0('$',paste(list,collapse = '$,$'),'$')
 
 listConcat %>% head() # head of dataframe
 
-listConcat %>% length() # add after conflict
+length(listConcat) # this line for making conflict
